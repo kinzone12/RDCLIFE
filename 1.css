@@ -6,9 +6,9 @@ body{
 background-color: #f1f1f1;
 box-sizing:border-box;
 font-family: Arial, sans-serif;
-            margin: 0;
-      padding: 20px;
-            background-color: #e9f5ff;
+margin: 0;
+padding: 20px;
+background-color: #e9f5ff;
 }
 section{
 	margin-top: 50px;
@@ -17,32 +17,56 @@ html{
 	scroll-behavior: smooth;
 	font-size:62,5% ;
 }
-.backgroundint {
+footer {
+    background-color: white; 
+    color: white;
+    padding: 20px; /* Espace intérieur */
+    text-align: center; 
+    position: relative; /* Pour un positionnement correct */
+    bottom: 0; /* Positionne en bas */
+    width: 100%; /* Prend toute la largeur */
+}
 
+.foot {
+    margin: 0; 
+    font-size: 1em; /* Taille de police */
 }
-.tel{
-	
+
+.contact-links {
+    margin-top: 10px; /* Espace au-dessus des liens */
 }
-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
+
+.contact-links a {
+    color: white; /* Couleur des liens */
+    text-decoration: none; /* Supprime le soulignement */
+    font-weight: bold; /* Met en gras */
+}
+
+.contact-links a:hover {
+    text-decoration: underline; /* Souligne au survol */
+}
+
+ nav {
+            list-style: none;
+            display: flex ;
+            gap: 15px ;
         }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 12px;
-            text-align: left;
+        nav li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
         }
-        th {
-            background-color: #f2f2f2;
-            color: #00509e;
+        nav li a:hover {
+            background:#f1f1f1 ;
+            border-radius: 5px;
         }
-        tr:hover {
-            background-color: #f1f1f1;
+        .search {
+            display: flex;
+            align-items: center;
         }
-        .highlight {
-            font-weight: bold;
-            color: #d9534f;
+        .search input {
+            padding: 5px;
+            margin-left: 10px;
         }
 h1 {
             color: #003366;
@@ -65,8 +89,8 @@ header{
 	align-items: center;
 	justify-content: space-between;
 	height: _0px;
-	padding: 0 10%;
-	position: fixed;
+	padding: 0 10%  auto;
+	position: fixed ;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -74,23 +98,7 @@ header{
 	box-shadow: 0 0 50px  rgba(50, 50, 0, 0.2);
 	z-index: 20px;
 }
-.foot{
-	background-color: rgba(255, 255, 255, 10);
-	box-shadow: 0 0 50px  rgba(50, 50, 0, 0.2);
-	z-index: 20px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	align-items: center;
-	background-color: rgba(255, 255, 255, 10);
-	justify-content: center;
-	color: red;
-	position: absolute;
-	display: flex;
-	left: 0;
-	right: 0;
-	box-shadow: 0 0 50px  rgba(50, 50, 0, 0.2);
-}
+
 .menu{
 	display: flex;
 
@@ -100,8 +108,8 @@ header{
 	font-size:25px ;
 	font-weight: 700;
 }
-.logo span {
-	color: black;
+.red {
+    color: red; 
 }
 .menu li{
 	margin: 0 15px;
@@ -131,63 +139,6 @@ header{
 .menu li a :hover::after{
 	width: 100%
 }
-#home{
-	margin-top: 50px;
-	display: flex;
-	align-items: center;
-	margin-left: 10%;
-	margin-right: 10%;
-	height: calc(100vh - 50px);
-	justify-content: space-between;
-	box-shadow: 2px;
-}
-#home .ileft{
-	width: 40px;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	margin: 20px;
-}
-#home .ileft h4{
-	font-size: 20px;
-	color: red;
-}
-#home .ileft h1{
-	font-size: 40px;
-}
-#home .ileft P{
-	font-size: 10px;
-	color:#999;
-}
-#home .ileft button {
-	margin-top: 20px;
-	width: fit-content;
-	position: 5px 10 px;
-	background-color: black;
-	border: 0;
-	position:relative ;
-	cursor: pointer;
-}
-#home .ileft button a {
-	text-decoration: 0;
-	color: white;
-	font-weight: bold;
-	text-transform: uppercase;
-}
-#home .ileft button:hover a{
-	letter-spacing: 1px;
-}
-#home .iright{
-	width: 50%;
-	height: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-#home .iright img{
-	width: 100%;
-}
 /*menu actualitee  */
 #menu{
 	display: flex;
@@ -214,17 +165,6 @@ header{
 	flex-wrap: wrap;
 	width: 80%;
 	justify-content: space-between;
-}
-.images{
-	height: 280px;
-	width: 50%;
-	background-color: white;
-	padding: 25px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	border-radius: 6px;
 }
 .container {
             background-color: #ffffff; /* Fond blanc pour le contenu */
@@ -259,21 +199,56 @@ form {
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
         }
-        .contact-info {
-            margin-top: 10px;
-            font-size: 1.1em;
-        }
-        .contact-item {
-            margin: 10px 0;
-        }
-        .contact-item a {
-            color: #388e3c; /* Liens en vert foncé */
-            text-decoration: none;
-        }
-        .contact-item a:hover {
-            text-decoration: underline;
-        }
+        
         /*menu petit detail  */
-        .home{
-        	height: 10;
-        }
+
+
+/*responsivite  */
+
+@media (max-width: 768px) {
+    body {
+        padding: 15px; /* Réduit le padding du corps */
+    }
+
+    header {
+        flex-direction: column; /* Aligne les éléments verticalement */
+        align-items: flex-start;
+    }
+
+    .logo p {
+        font-size: 1.5em; /* Ajuste la taille du logo */
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap; /* Permet aux éléments de passer à la ligne */
+    }
+
+    .menu li {
+        margin: 5px 10px; /* Espace entre les éléments du menu */
+    }
+
+    .container {
+        padding: 15px; /* Réduit le padding du conteneur */
+        border-radius: 8px; /* Maintient l'esthétique */
+        box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1); /* Légère ombre */
+    }
+
+    article {
+        margin: 15px 0; /* Réduit l'espace entre les articles */
+    }
+
+    .text {
+        width: 100%; /* Rendre la barre de recherche pleine largeur */
+        margin-top: 10px; /* Espace au-dessus de la barre de recherche */
+    }
+
+    .pagination {
+        flex-direction: column; /* Aligne les éléments verticalement */
+        align-items: center;
+    }
+
+    .pagination a {
+        margin-top: 10px; /* Espace entre les boutons de pagination */
+    }
+}
